@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    margin: 0;
+    padding: 0;
+    background: #e9e9e9;
+    overflow-x: hidden;
+}
+
+
+.navmenu{
+    position: relative;
+    margin-top: -18px;
+    margin-left: -170px;
+    width: 210px;
+    height: 63px;
+}
+.logoHome{
+    position: relative;
+    margin-top: -15px;
+    margin-left: -150px;
+    width: 110px;
+    height: 50px;
+}
+
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    background-color:#EEEEEE;
+    height: 100%;
+    width: 240px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -240px;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+
+}
+
+.link{
+    background-color: #EEEEEE;
+    padding: 20px;
+    font-family: 'Arial';
+    font-weight: 12pt;
+    transition: all .2s linear;
+    color: gray ;
+    border-bottom: 2px solid #222;
+}
+
+.link:hover{
+    background-color: white;
+    color:black
+}
+
+#check:checked ~ .barra{
+    transform: translateX(240px);
+
+}
+
+#check:checked ~ .topnav{
+    transform: translateX(150px);
+    transition-delay: 0.18s;
+}
+
+#check:checked ~ #icone{
+    transform: translateX(150px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+
+}
+
+.topnav {
+    background-color: #217DBB;
+    overflow: hidden;
+    margin-left: 20px;
+    height: 60px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #2489CC;
+    height: 60px;
+
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a .active {
+    background-color: #2489CC;
+    color: white;
+  }
